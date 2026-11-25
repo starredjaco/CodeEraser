@@ -66,7 +66,7 @@ docSeqCap = 65536
 -- | Ceiling on the shingles of all segments one coarse-filter request
 -- sends (docpairs/1; this repository sends about 390,000). It sits above
 -- what the protocol's line can carry (a shingle hash spells about 20
--- bytes with its comma — 20.4 on Claude-Code-Local's request — so 16 Mi
+-- bytes with its comma — 20.4 on sample project B's request — so 16 Mi
 -- of them come to ~340 MB, past the 134,217,728-byte line), so the line
 -- acts first: the measuring side names a pass over it before sending
 -- (corelink::judged::whole_pass → fits_line).
