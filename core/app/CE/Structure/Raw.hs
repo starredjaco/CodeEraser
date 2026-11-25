@@ -195,9 +195,9 @@ redundancy dup dead =
 -- the one that counts (the Chars / Lower posture of CE.Similar):
 -- `otherExtend` is the set of code points rustc 1.94.1's `{:?}` escapes
 -- that GHC 9.14.1's Mn / Me and the printable rule do not already cover,
--- measured over every code point (probe
--- D:/Projects/.worktrees/CodeEraser/w1i3_review_probe/, rs.txt against
--- hs_lf.txt); outside it the two sides agreed on all 954,527 other
+-- measured over every code point (a probe compared rustc's `{:?}` output
+-- with this function's output for each one; its scratch files are not
+-- kept); outside it the two sides agreed on all 954,527 other
 -- escaped code points at this pairing, and with it this function escapes
 -- exactly the 954,588 code points rustc 1.94.1 does, each spelled alike.
 -- A toolchain move re-measures it.
